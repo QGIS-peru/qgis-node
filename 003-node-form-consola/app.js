@@ -37,9 +37,7 @@ app.get('/', function(req, res){
 // that `req.body` will be filled in with the form elements
 app.post('/', function(req, res){
   var userName = req.body.userName;
-  var html = 'Hello: ' + userName + '.<br>' +
-             '<a href="/">Try again.</a>';
-  res.send(html);
+  console.log(userName);
 });
 
 app.listen(80);
